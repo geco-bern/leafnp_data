@@ -7,7 +7,6 @@ library(purrr)
 library(rbeni)
 library(ingestr)
 
-
 ## -------------------------------------------------------------------------------------
 df <- read_csv(paste0(here::here(), "/data-raw/global_leaf_NP_total_Di_20210224.csv")) %>%  #, col_types = "idddcccdddddccccccc") %>%
   rename(lon = lon_estimate,
