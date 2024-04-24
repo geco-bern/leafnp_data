@@ -61,5 +61,7 @@ Show was Whittaker biome plot.
 plotbiomes::whittaker_base_plot() +
   geom_point(data = dfs, aes(x = mat, y = map/10), alpha = 0.3) +
   theme_classic()
+ggsave(paste0(here::here(), "/fig/sites_biomes_whittaker.pdf"), width = 8, height = 5)
+ggsave(paste0(here::here(), "/fig/sites_biomes_whittaker.png"), width = 8, height = 5)
 ```
 ```
